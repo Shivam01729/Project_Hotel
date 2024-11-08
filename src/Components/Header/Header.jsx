@@ -48,7 +48,7 @@ function Header(){
                             <h2 data-swiper-parallax="-400px">Enjoy your <span>Dream</span>time with <br />
                                <span>Luxury</span>Experience
                             </h2>
-                            <p data-swiper-parallax="-600px">call Now <span>7903796875</span></p>
+                            <p data-swiper-parallax="-600px">call Now <span>7903570716</span></p>
                         </div>
                     </div>
                 </SwiperSlide>
