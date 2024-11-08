@@ -6,8 +6,13 @@ function Footer(){
         <footer className={`${footerCSS.footer_wrapper} sectionss`}>
             <div className={footerCSS.FooterLinks}>
                 <div className={footerCSS.logo}>
-                <h2>RoyalX</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur modi officia rem, voluptate voluptatum repudiandae eligendi in numquam itaque expedita asperiores aperiam libero vero nam.</p>
+                <h2>HotelYash</h2>
+                <p>Stay once, carry memories forever
+Start here.. New Living
+See life from a different perspective
+your next space
+The perfect place for getaways!
+Space to live your life</p>
                 </div>
             </div>
            
