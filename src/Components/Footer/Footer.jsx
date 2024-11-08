@@ -7,11 +7,11 @@ function Footer(){
             <div className={footerCSS.FooterLinks}>
                 <div className={footerCSS.logo}>
                 <h2>HotelYash</h2>
-                <p>Stay once, carry memories forever
-Start here.. New Living
-See life from a different perspective
-your next space
-The perfect place for getaways!
+                <p>Stay once, carry memories forever,
+Start here..   New Living,
+See life from a different perspective,
+your next space,
+The perfect place for getaways!,
 Space to live your life</p>
                 </div>
             </div>
