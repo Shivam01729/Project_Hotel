@@ -20,7 +20,7 @@ Space to live your life</p>
                 <h3>Contact</h3>
                 <p>Address: <span>Dehri-on-sone </span></p>
                 {/* <p>Email: shiavm@gmail.com </p> */}
-                <p>phone: <span>91-XXXXXX</span></p>
+                <p>phone: <span>91-7903570716</span></p>
             </div>
             <div className={footerCSS.FooterLinks}></div>
         </footer>
