@@ -1,45 +1,6 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
-// import Nav from './Components/nav/Nav'
-// import Header from './Components/Header/Header'
-// import About from './Components/About/About'
-// import Services from './Components/Services/Services'
-// import Rooms from './Components/Rooms/Room'
-// import Testimonial from './Components/Testimonials/Testimonial'
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-// import Footer from './Components/Footer/Footer'
-
-// function App() {
-//   const [count, setCount] = useState(0)
-
-//   return (
-//     <>
-     
-//      <Nav />
-//      <Header />
-//      <About />
-//      <Services />
-//      <Rooms />
-//     {/* <Testimonial /> */}
-   
-//     <Router>
-//             <Nav />
-//             <Routes>
-//                 <Route path="/" element={<Home />} />
-//                 <Route path="/testimonials" element={<Testimonial />} />
-//                 {/* Add other routes here */}
-//             </Routes>
-//         </Router>
-//         <Footer />
-//     </>
-//   )
-// }
-
-
-// export default App
+import {useEffect} from 'react';
+import Lenis from 'lenis';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Nav from './Components/nav/Nav';
 import Header from './Components/Header/Header';
@@ -48,33 +9,69 @@ import Services from './Components/Services/Services';
 import Rooms from './Components/Rooms/Room';
 import Testimonial from './Components/Testimonials/Testimonial';
 import Footer from './Components/Footer/Footer';
-// import Booking from './Components/Booking/Booking';
+import Contact from './Components/Contact/Contact';  // Import Contact component
+
 
 function App() {
+    useEffect(() => {
+        const lenis = new Lenis();
+        function raf(time){
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+        return () => {
+            lenis.destroy();
+        }
+    },[]);
+
+
     return (
-        <>
-
+        <Router>
             <Nav />
-         
-          
+            <Routes>
+                {/* Route for the home page */}
+                <Route
+                    path="/"
+                    element={
+                        <>
+                            <div id="home">
+                                <Header />
+                            </div>
+                            <div id="home">
+                                <About />
+                            </div>
+                            <div id="home">
+                                <Rooms />
+                            </div>
+                            
+                           
+                            <div id="home">
+                                <Nav />
+                            </div>
+                            <div id="home">
+                                <Services />
+                            </div>
+                            <div id="home">
+                                <Testimonial />
+                            </div>
 
-            <div id="home">
-                <Header />
-            </div>
-            <div id="about">
-                <About />
-            </div>
-            <div id="categories">
-                <Services />
-            </div>
-            <div id="rooms">
-                <Rooms />
-            </div>
-            <div id="testimonials">
-                <Testimonial />
-            </div>
-            <Footer />
-        </>
+                            <div id="home">
+                                <Footer />
+                            </div>
+                        </>
+                    }
+                />
+
+                {/* Route for the contact page */}
+                <Route path="/about" element={<About />} />
+                <Route path="/rooms" element={<Rooms />} />
+                <Route path="/testimonial" element={<Testimonial />} />
+                <Route path="/facility" element={<Services />} />
+
+                <Route path="/contact" element={<Contact />} />
+            </Routes>
+        </Router>
     );
 }
 

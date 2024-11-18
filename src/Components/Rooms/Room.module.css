@@ -100,6 +100,12 @@
     justify-content: center;
 
 }
+
+.Nav_btns {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
 .Card_front2 {
     background: url(./../../assets/room2.png);
     background-size: cover; /* Ensures the image covers the entire card */

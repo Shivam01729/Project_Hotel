@@ -28,11 +28,11 @@
     animation: Anim_shake 1s forwards linear;
 }
 .Services_cards .Services_card h3{
-    font-size: 20px;
+    font-size: 21px;
     margin-bottom: 20px;
 }
 .Services_cards .Services_card p{
-    font-size: 12px;
+    font-size: 18px;
     margin-top: 3px;
     font-family: 'poppins';
     color: rgba(131,131, 131, 1);

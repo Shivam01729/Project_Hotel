@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import roomsCSS from './../Rooms/Room.module.css'
 
 function Rooms(){
@@ -25,7 +26,9 @@ function Rooms(){
                                 <p> - Wifi & Parking </p>
                             </div>
                             <div className={roomsCSS.BooKNow}>
-                                <button>Book Now</button>
+                            <Link to="/contact">
+                    <button className={roomsCSS.btn}>Book Now</button>
+                </Link>
                                 <i className="ri-arrow-right-line"></i>
                             </div>
                         </div>
@@ -48,7 +51,9 @@ function Rooms(){
                                 <p> - Wifi & Parking </p>
                             </div>
                             <div className={roomsCSS.BooKNow}>
-                                <button>Book Now</button>
+                            <Link to="/contact">
+                    <button className={roomsCSS.btn}>Book Now</button>
+                </Link>
                                 <i className="ri-arrow-right-line"></i>
                             </div>
                         </div>
@@ -71,7 +76,9 @@ function Rooms(){
                                 <p> - Wifi & Parking </p>
                             </div>
                             <div className={roomsCSS.BooKNow}>
-                                <button>Book Now</button>
+                            <Link to="/contact">
+                    <button className={roomsCSS.btn}>Book Now</button>
+                </Link>
                                 <i className="ri-arrow-right-line"></i>
                             </div>
                         </div>
@@ -94,7 +101,9 @@ function Rooms(){
                                 <p> - Wifi & Parking </p>
                             </div>
                             <div className={roomsCSS.BooKNow}>
-                                <button>Book Now</button>
+                            <Link to="/contact">
+                    <button className={roomsCSS.btn}>Book Now</button>
+                </Link>
                                 <i className="ri-arrow-right-line"></i>
                             </div>
                         </div>
@@ -117,7 +126,9 @@ function Rooms(){
                                 <p> - Wifi & Parking </p>
                             </div>
                             <div className={roomsCSS.BooKNow}>
-                                <button>Book Now</button>
+                            <Link to="/contact">
+                    <button className={roomsCSS.btn}>Book Now</button>
+                </Link>
                                 <i className="ri-arrow-right-line"></i>
                             </div>
                         </div>
@@ -140,7 +151,9 @@ function Rooms(){
                                 <p> - Wifi & Parking </p>
                             </div>
                             <div className={roomsCSS.BooKNow}>
-                                <button>Book Now</button>
+                            <Link to="/contact">
+                    <button className={roomsCSS.btn}>Book Now</button>
+                </Link>
                                 <i className="ri-arrow-right-line"></i>
                             </div>
                         </div>

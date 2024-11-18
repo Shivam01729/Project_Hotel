@@ -37,7 +37,6 @@ function Services(){
                     <i className="ri-hotel-bed-line"></i>
                     <h3>Dormitory</h3>
                     <p>- Comfortable Bedding</p>
-                    {/* <p>- Hall</p> */}
                     <p>- TV and AC</p>
                     <p>- WashRoom</p>
                 </div>
