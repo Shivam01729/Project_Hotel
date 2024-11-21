@@ -34,10 +34,10 @@ function ContactForm() {
 
         // Send email using EmailJS
         emailjs.send(
-            'service_d7qx6ci',         // Replace with your EmailJS Service ID
-            'template_4s0i78h',        // Replace with your EmailJS Template ID
+            'service_wn6ptfk',         // Replace with your EmailJS Service ID
+            'template_bsnr5lj',        // Replace with your EmailJS Template ID
             templateParams,
-            'mT4k_tNtGIeBKN2_y'          // Replace with your EmailJS Public Key
+            'uLDjUT3ESzqEZHYOi'          // Replace with your EmailJS Public Key
         ).then((response) => {
             console.log('Email successfully sent:', response.status, response.text);
             setSubmitted(true);
